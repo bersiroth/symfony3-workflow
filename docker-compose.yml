@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+    db:
+        image: mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    engine:
+        build:
+            context: docker/php7-fpm
+            args:
+                TIMEZONE: ${TIMEZONE}
+        volumes:
+            - ${SYMFONY_APP_PATH}:/var/www
+    front:
+        build: docker/nginx
+        ports:
+            - 80:80
+        volumes_from:
+            - engine
+        volumes:
+            - ./docker/logs/nginx/:/var/log/nginx

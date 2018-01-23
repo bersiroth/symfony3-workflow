@@ -1,0 +1,4 @@
+OuicarBundle\Entity\Car:
+    properties:
+        mileage:
+            - NotBlank: ~

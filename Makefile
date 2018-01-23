@@ -13,6 +13,9 @@ front-ssh:
 engine-ssh:
 		docker-compose exec engine bash
 
+engine-files-rights:
+		docker-compose exec engine chown -R www-data:www-data /var/www/*
+
 db:
 		docker-compose exec db mysql -uroot -p"root"
 

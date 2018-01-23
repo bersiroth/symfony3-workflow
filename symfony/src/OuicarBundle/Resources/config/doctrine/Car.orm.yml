@@ -1,0 +1,23 @@
+OuicarBundle\Entity\Car:
+    type: entity
+    table: null
+    repositoryClass: OuicarBundle\Repository\CarRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        mileage:
+            type: integer
+        priceDay1:
+            type: integer
+            column: price_day_1
+        priceDay2:
+            type: integer
+            column: price_day_2
+        priceDay3:
+            type: integer
+            column: price_day_3
+    lifecycleCallbacks: {  }

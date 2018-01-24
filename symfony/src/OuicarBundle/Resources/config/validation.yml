@@ -2,3 +2,9 @@ OuicarBundle\Entity\Car:
     properties:
         mileage:
             - NotBlank: ~
+        priceDay1:
+            - NotBlank: ~
+        priceDay1:
+            - NotBlank: ~
+        priceDay3:
+            - NotBlank: ~

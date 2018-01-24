@@ -16,8 +16,20 @@ class CarType extends AbstractType
         $builder
             ->add('mileage')
             ->add('priceDay1')
-            ->add('priceDay2')
-            ->add('priceDay3');
+            ->add('priceDay3')
+            ->add('priceDay7');
+
+        $builder->get('mileage')
+            ->addModelTransformer(new CallbackTransformer(
+                function ($mileage) {
+                    // transform the array to a string
+                    return implode(', ', $tagsAsArray);
+                },
+                function ($id) {
+                    // transform the string back to an array
+                    return explode(', ', $tagsAsString);
+                }
+            ))
     }
 
     /**

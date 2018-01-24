@@ -14,10 +14,10 @@ OuicarBundle\Entity\Car:
         priceDay1:
             type: integer
             column: price_day_1
-        priceDay2:
-            type: integer
-            column: price_day_2
         priceDay3:
             type: integer
             column: price_day_3
+        priceDay7:
+            type: integer
+            column: price_day_7
     lifecycleCallbacks: {  }

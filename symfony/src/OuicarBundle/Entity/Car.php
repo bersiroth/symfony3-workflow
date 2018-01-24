@@ -25,12 +25,12 @@ class Car
     /**
      * @var int
      */
-    private $priceDay2;
+    private $priceDay3;
 
     /**
      * @var int
      */
-    private $priceDay3;
+    private $priceDay7;
 
 
     /**
@@ -92,30 +92,6 @@ class Car
     }
 
     /**
-     * Set priceDay2.
-     *
-     * @param int $priceDay2
-     *
-     * @return Car
-     */
-    public function setPriceDay2($priceDay2)
-    {
-        $this->priceDay2 = $priceDay2;
-
-        return $this;
-    }
-
-    /**
-     * Get priceDay2.
-     *
-     * @return int
-     */
-    public function getPriceDay2()
-    {
-        return $this->priceDay2;
-    }
-
-    /**
      * Set priceDay3.
      *
      * @param int $priceDay3
@@ -138,4 +114,29 @@ class Car
     {
         return $this->priceDay3;
     }
+
+    /**
+     * Set priceDay7.
+     *
+     * @param int $priceDay7
+     *
+     * @return Car
+     */
+    public function setPriceDay7($priceDay7)
+    {
+        $this->priceDay7 = $priceDay7;
+
+        return $this;
+    }
+
+    /**
+     * Get priceDay7.
+     *
+     * @return int
+     */
+    public function getPriceDay7()
+    {
+        return $this->priceDay7;
+    }
+
 }

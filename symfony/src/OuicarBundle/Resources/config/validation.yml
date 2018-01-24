@@ -2,9 +2,19 @@ OuicarBundle\Entity\Car:
     properties:
         mileage:
             - NotBlank: ~
+            - GreaterThan: 0
         priceDay1:
             - NotBlank: ~
-        priceDay1:
-            - NotBlank: ~
+            - GreaterThan: 0
         priceDay3:
             - NotBlank: ~
+            - GreaterThan: 0
+            - Expression:
+                expression: "this.getPriceDay1() <= this.getPriceDay3()"
+                message: "The priceDay3 must be degressive price."
+        priceDay7:
+            - NotBlank: ~
+            - GreaterThan: 0
+            - Expression:
+                expression: "this.getPriceDay3() <= this.getPriceDay7()"
+                message: "The priceDay7 must be degressive price."

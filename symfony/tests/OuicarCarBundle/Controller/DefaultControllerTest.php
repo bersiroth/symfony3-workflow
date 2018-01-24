@@ -1,6 +1,6 @@
 <?php
 
-namespace Ouicar\CarBundle\Tests\Controller;
+namespace CarRental\CarBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

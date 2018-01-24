@@ -1,0 +1,3 @@
+CarRental:
+    type:     rest
+    resource: CarRentalBundle\Controller\CarController

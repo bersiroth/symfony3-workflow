@@ -1,3 +1,0 @@
-ouicar:
-    type:     rest
-    resource: OuicarBundle\Controller\CarController

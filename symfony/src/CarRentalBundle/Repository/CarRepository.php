@@ -1,6 +1,6 @@
 <?php
 
-namespace OuicarBundle\Repository;
+namespace CarRentalBundle\Repository;
 
 /**
  * CarRepository

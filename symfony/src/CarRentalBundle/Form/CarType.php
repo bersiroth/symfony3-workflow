@@ -1,6 +1,6 @@
 <?php
 
-namespace OuicarBundle\Form;
+namespace CarRentalBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -19,17 +19,17 @@ class CarType extends AbstractType
             ->add('priceDay3')
             ->add('priceDay7');
 
-        $builder->get('mileage')
-            ->addModelTransformer(new CallbackTransformer(
-                function ($mileage) {
-                    // transform the array to a string
-                    return implode(', ', $tagsAsArray);
-                },
-                function ($id) {
-                    // transform the string back to an array
-                    return explode(', ', $tagsAsString);
-                }
-            ))
+//        $builder->get('mileage')
+//            ->addModelTransformer(new CallbackTransformer(
+//                function ($mileage) {
+//                    // transform the array to a string
+//                    return implode(', ', $tagsAsArray);
+//                },
+//                function ($id) {
+//                    // transform the string back to an array
+//                    return explode(', ', $tagsAsString);
+//                }
+//            ))
     }
 
     /**
@@ -38,7 +38,7 @@ class CarType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'OuicarBundle\Entity\Car',
+            'data_class' => 'CarRentalBundle\Entity\Car',
             'csrf_protection' => false
         ));
     }
@@ -48,7 +48,7 @@ class CarType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'ouicarbundle_car';
+        return 'CarRentalbundle_car';
     }
 
 

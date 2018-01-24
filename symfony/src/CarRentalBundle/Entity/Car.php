@@ -1,6 +1,6 @@
 <?php
 
-namespace OuicarBundle\Entity;
+namespace CarRentalBundle\Entity;
 
 /**
  * Car

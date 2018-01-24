@@ -1,7 +1,7 @@
-OuicarBundle\Entity\Car:
+CarRentalBundle\Entity\Car:
     type: entity
     table: null
-    repositoryClass: OuicarBundle\Repository\CarRepository
+    repositoryClass: CarRentalBundle\Repository\CarRepository
     id:
         id:
             type: integer

@@ -1,14 +1,14 @@
 <?php
 
-namespace OuicarBundle\Controller;
+namespace CarRentalBundle\Controller;
 
 use phpDocumentor\Reflection\Types\Boolean;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
-use OuicarBundle\Entity\Car;
-use OuicarBundle\Form\CarType;
+use CarRentalBundle\Entity\Car;
+use CarRentalBundle\Form\CarType;
 
 /**
  * @Rest\RouteResource("Car", pluralize=false)

@@ -1,4 +1,4 @@
-OuicarBundle\Entity\Car:
+CarRentalBundle\Entity\Car:
     properties:
         mileage:
             - NotBlank: ~
